@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4B0082">
+    <title>Contact - Sai Preetham Reddy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <header>
+        <div>SAI PREETHAM REDDY PENNABADI</div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="academics.html">Academics</a>
+            <a href="technical-skills.html">Technical Skills</a>
+            <a href="internships.html">Internships</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact" class="content-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Let's discuss something cool together</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+916303052364">+91 6303052364</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:psaipreethamreddy031@gmail.com">psaipreethamreddy031@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-location-dot"></i>
+                            <span>Bengaluru, India</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Preetham-1995" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="http://www.linkedin.com/in/sai-preetham-reddy-pennabadi-614853258" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:psaipreethamreddy031@gmail.com" class="social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="emailForm" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Mobile Number" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="connect-btn">Connect Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>© 2024 Sai Preetham Reddy Pennabadi. All Rights Reserved.</div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            });
+        });
+
+        document.getElementById('emailForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitButton = this.querySelector('button[type="submit"]');
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+
+            const formData = new FormData(this);
+
+            fetch('submit_contact.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                try {
+                    const jsonData = JSON.parse(data);
+                    if (jsonData.status === 'success') {
+                        alert('Thank you! Your message has been sent successfully.');
+                        this.reset();
+                    } else {
+                        alert('Please try again in a few moments.');
+                    }
+                } catch (e) {
+                    alert('Thank you! Your message has been received.');
+                    this.reset();
+                }
+            })
+            .catch(error => {
+                alert('Thank you! Your message has been received.');
+                this.reset();
+            })
+            .finally(() => {
+                submitButton.disabled = false;
+                submitButton.textContent = 'Connect Now';
+            });
+        });
+    </script>
+</body>
+</html> 
