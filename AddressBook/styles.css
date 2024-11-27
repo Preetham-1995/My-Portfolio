@@ -2495,11 +2495,48 @@ section > div:last-child {
     }
 
     .typing-text {
-        font-size: 1.4em;
+        font-size: 20px;
     }
 
     .who-am-i {
-        font-size: 1.2em;
+        font-size: 18px;
+    }
+
+    .description-container p {
+        font-size: 13px;
+    }
+
+    /* Adjust spacing for smaller screens */
+    .content-section {
+        padding: 12px;
+        margin: 6px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 12px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .contact-item {
+        padding: 8px;
+    }
+
+    .contact-item i {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+
+    .social-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
     }
 }
 
@@ -2546,10 +2583,1618 @@ section > div:last-child {
 
 /* Mobile responsive styles */
 @media screen and (max-width: 768px) {
-    .skills-row:last-child .skill-box:first-child {
-        grid-column: unset;
-        width: calc(50% - 10px);
-        margin: 0 auto; /* Center the single item on mobile */
+    /* Header adjustments */
+    header {
+        padding: 8px 12px;
+        height: 56px; /* Standard mobile header height */
+    }
+
+    header div {
+        font-size: 14px;
+        max-width: 60%;
+        line-height: 1.2;
+    }
+
+    /* Navigation adjustments */
+    nav {
+        top: 56px;
+        padding: 8px 0;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 12px 16px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Main content adjustments */
+    main {
+        padding-top: 56px; /* Match header height */
+    }
+
+    .content-section {
+        padding: 16px;
+        margin: 8px;
+    }
+
+    /* Home page adjustments */
+    .home-layout {
+        padding: 16px;
+        margin-top: 16px;
+        flex-direction: column;
+    }
+
+    .photo-section {
+        width: 160px; /* Smaller, mobile-friendly size */
+        height: 160px;
+        margin: 16px auto;
+    }
+
+    .photo-container,
+    .photo-container img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .info-section {
+        padding: 16px;
+        width: 100%;
+    }
+
+    .who-am-i {
+        font-size: 18px;
+        margin: 12px 0;
+        letter-spacing: 1px;
+    }
+
+    .typing-text {
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin: 8px 0;
+        line-height: 1.3;
+    }
+
+    .description-container {
+        padding: 12px;
+        margin-top: 12px;
+    }
+
+    .description-container p {
+        font-size: 13px;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+    }
+
+    /* Academics page adjustments */
+    .education-item {
+        padding: 12px;
+        margin-bottom: 16px;
+    }
+
+    .education-item h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .education-item h4 {
+        font-size: 14px;
+    }
+
+    .education-item .grade {
+        font-size: 14px;
+        margin: 6px 0;
+    }
+
+    .education-item .institution,
+    .education-item .location {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    /* Technical Skills adjustments */
+    .skills-wrapper {
+        margin: 16px auto;
+        padding: 12px;
+    }
+
+    .skills-row {
+        gap: 12px;
+    }
+
+    .skill-box {
+        padding: 12px;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .skill-box i {
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+
+    .skill-box span {
+        font-size: 12px;
+    }
+
+    /* Internships page adjustments */
+    .internships-container {
+        padding: 12px;
+        margin: 16px auto;
+    }
+
+    .internship-item {
+        padding: 12px;
+        margin-bottom: 16px;
+    }
+
+    .internship-item h3 {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .internship-item h4 {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .internship-item .duration {
+        font-size: 13px;
+        margin: 6px 0;
+    }
+
+    /* Projects page adjustments */
+    .projects-container {
+        margin: 16px auto;
+        padding: 12px;
+    }
+
+    .projects-content {
+        gap: 16px;
+    }
+
+    .project-item {
+        padding: 12px;
+    }
+
+    .project-item h3 {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .project-item h4 {
+        font-size: 14px;
+    }
+
+    /* Contact page adjustments */
+    .contact-container {
+        padding: 12px;
+        margin: 16px auto;
+        gap: 16px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 16px;
+    }
+
+    .contact-info h2 {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .contact-details {
+        gap: 12px;
+    }
+
+    .contact-item {
+        padding: 10px;
+        gap: 12px;
+    }
+
+    .contact-item i {
+        font-size: 18px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .contact-item a,
+    .contact-item span {
+        font-size: 13px;
+    }
+
+    .form-group {
+        margin-bottom: 12px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px;
+        font-size: 13px;
+        border-radius: 8px;
+    }
+
+    .connect-btn {
+        padding: 12px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+
+    .social-links {
+        gap: 16px;
+        margin-top: 16px;
+    }
+
+    .social-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 375px) {
+    header div {
+        font-size: 13px;
+    }
+
+    .photo-section {
+        width: 140px;
+        height: 140px;
+    }
+
+    .photo-container,
+    .photo-container img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .typing-text {
+        font-size: 18px;
+    }
+
+    .who-am-i {
+        font-size: 16px;
+    }
+
+    .description-container p {
+        font-size: 12px;
+    }
+
+    /* Adjust spacing for smaller screens */
+    .content-section {
+        padding: 12px;
+        margin: 6px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 12px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .contact-item {
+        padding: 8px;
+    }
+
+    .contact-item i {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+
+    .social-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+}
+
+/* Touch target sizes */
+@media screen and (max-width: 768px) {
+    /* Ensure minimum touch target size of 44x44px */
+    nav a,
+    .skill-box,
+    .contact-item,
+    .social-icon,
+    .connect-btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    /* Add proper touch spacing */
+    nav {
+        gap: 8px;
+    }
+
+    .skills-row {
+        gap: 8px;
+    }
+
+    /* Improve tap targets */
+    .hamburger {
+        padding: 12px;
+        margin: -12px;
+    }
+
+    .hamburger div {
+        height: 2px;
+        margin: 4px 0;
+    }
+}
+
+/* Core mobile responsive styles */
+@media screen and (max-width: 768px) {
+    /* Header optimization */
+    header {
+        padding: 8px 12px;
+        height: 56px;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    header div {
+        font-size: 14px;
+        max-width: 70%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Navigation menu optimization */
+    nav {
+        top: 56px;
+        background-color: rgba(0, 30, 60, 0.95);
+        width: 100%;
+        padding: 0;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 14px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Main content wrapper */
+    main {
+        padding-top: 56px;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Home page optimization */
+    .home-layout {
+        padding: 16px;
+        margin: 0;
+        gap: 24px;
+    }
+
+    .photo-section {
+        width: 180px;
+        height: 180px;
+        margin: 16px auto;
+    }
+
+    .photo-container,
+    .photo-container img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .info-section {
+        padding: 0 16px;
+        text-align: center;
+    }
+
+    .who-am-i {
+        font-size: 18px;
+        margin: 12px 0;
+    }
+
+    .typing-text {
+        font-size: 20px;
+        padding: 0;
+        margin: 12px 0;
+        white-space: normal;
+        overflow: visible;
+        width: 100%;
+    }
+
+    .description-container {
+        padding: 16px;
+        margin: 16px 0;
+    }
+
+    .description-container p {
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: justify;
+        margin: 0;
+    }
+
+    /* Academics page optimization */
+    .academics-container {
+        padding: 16px;
+        margin: 0;
+    }
+
+    .education-item {
+        padding: 16px;
+        margin-bottom: 16px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+    }
+
+    .education-item h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+        color: #23d5ab;
+    }
+
+    .education-item h4 {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .education-item .grade {
+        font-size: 14px;
+        margin: 8px 0;
+    }
+
+    .education-item .institution,
+    .education-item .location {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    /* Technical Skills optimization */
+    .skills-wrapper {
+        padding: 16px;
+        margin: 0;
+    }
+
+    .mobile-skills .skills-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+
+    .skill-box {
+        padding: 16px;
+        height: auto;
+        aspect-ratio: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+    }
+
+    .skill-box i {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .skill-box span {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* Internships page optimization */
+    .internships-container {
+        padding: 16px;
+        margin: 0;
+    }
+
+    .internship-item {
+        padding: 16px;
+        margin-bottom: 16px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+    }
+
+    .internship-item h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+        color: #23d5ab;
+    }
+
+    .internship-item h4 {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    .internship-item .duration {
+        font-size: 13px;
+        color: #ffffff;
+        opacity: 0.8;
+    }
+
+    /* Projects page optimization */
+    .projects-container {
+        padding: 16px;
+        margin: 0;
+    }
+
+    .projects-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .project-item {
+        padding: 16px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+    }
+
+    .project-item h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+        color: #23d5ab;
+    }
+
+    .project-item h4 {
+        font-size: 14px;
+        opacity: 0.9;
+    }
+
+    /* Contact page optimization */
+    .contact-container {
+        padding: 16px;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .contact-info {
+        padding: 16px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+        margin-bottom: 16px;
+    }
+
+    .contact-info h2 {
+        font-size: 18px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .contact-details {
+        gap: 12px;
+    }
+
+    .contact-item {
+        padding: 12px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+        align-items: center;
+    }
+
+    .contact-item i {
+        font-size: 18px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .contact-item a,
+    .contact-item span {
+        font-size: 13px;
+        word-break: break-word;
+    }
+
+    .contact-form {
+        padding: 16px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+    }
+
+    .form-group {
+        margin-bottom: 12px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 12px;
+        font-size: 14px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        color: #ffffff;
+    }
+
+    .connect-btn {
+        width: 100%;
+        padding: 14px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        background: linear-gradient(45deg, #23d5ab, #4B0082);
+        border-radius: 8px;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 16px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+    }
+}
+
+/* Extra small devices optimization */
+@media screen and (max-width: 375px) {
+    header div {
+        font-size: 13px;
+    }
+
+    .photo-section {
+        width: 160px;
+        height: 160px;
+    }
+
+    .photo-container,
+    .photo-container img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .typing-text {
+        font-size: 18px;
+    }
+
+    .who-am-i {
+        font-size: 16px;
+    }
+
+    .description-container p {
+        font-size: 13px;
+    }
+
+    .education-item,
+    .internship-item,
+    .project-item,
+    .contact-info,
+    .contact-form {
+        padding: 12px;
+    }
+
+    .skill-box {
+        padding: 12px;
+    }
+
+    .skill-box i {
+        font-size: 20px;
+    }
+
+    .contact-item i {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+
+    .social-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+}
+
+/* Mobile header name optimization */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 8px 12px;
+        height: auto;
+        min-height: 56px;
+    }
+
+    header div {
+        font-size: 12px; /* Smaller font size */
+        max-width: 85%; /* Increased width */
+        white-space: normal; /* Allow text wrapping */
+        line-height: 1.2;
+        padding-right: 10px;
+        text-align: left;
+    }
+
+    /* Home page name and content optimization */
+    .typing-text {
+        font-size: 16px; /* Smaller font size */
+        padding: 0 8px;
+        margin: 8px 0;
+        white-space: normal; /* Allow text wrapping */
+        line-height: 1.3;
+        letter-spacing: 0.5px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .who-am-i {
+        font-size: 14px;
+        margin: 10px 0;
+        letter-spacing: 0.5px;
+    }
+
+    /* Academics page center alignment */
+    .academics-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 16px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .academics-content {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .education-item {
+        text-align: center;
+        width: 100%;
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+
+    .academics-logo {
+        display: none; /* Hide logo on mobile */
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 375px) {
+    header div {
+        font-size: 11px; /* Even smaller font for header */
+        line-height: 1.1;
+    }
+
+    .typing-text {
+        font-size: 14px; /* Smaller name size */
+        letter-spacing: 0.3px;
+    }
+
+    .who-am-i {
+        font-size: 12px;
+    }
+
+    .education-item {
+        padding: 12px;
+    }
+
+    .education-item h3 {
+        font-size: 14px;
+    }
+
+    .education-item h4 {
+        font-size: 12px;
+    }
+}
+
+/* Very small devices */
+@media screen and (max-width: 320px) {
+    header div {
+        font-size: 10px;
+    }
+
+    .typing-text {
+        font-size: 13px;
+    }
+
+    .who-am-i {
+        font-size: 11px;
+    }
+}
+
+/* Technical Skills mobile optimization - updated for better visibility */
+@media screen and (max-width: 768px) {
+    .skills-wrapper {
+        padding: 12px;
+        margin: 60px 0 20px 0;
+        overflow-y: auto; /* Enable vertical scrolling */
+        max-height: calc(100vh - 120px); /* Account for header and margins */
+    }
+
+    /* Hide desktop skills */
+    .desktop-skills {
+        display: none;
+    }
+
+    /* Show and style mobile skills */
+    .mobile-skills {
+        display: block;
+    }
+
+    .mobile-skills .skills-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+        gap: 8px; /* Reduced gap */
+        margin-bottom: 8px;
+        padding: 0 4px;
+    }
+
+    .skill-box {
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 8px;
+        padding: 16px 12px;
+        min-height: 100px; /* Increased height */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .skill-box i {
+        font-size: 32px; /* Larger icons */
+        color: #ffffff; /* White color */
+        margin-bottom: 6px;
+        filter: brightness(1); /* Ensure icons are white */
+    }
+
+    .skill-box span {
+        font-size: 14px; /* Larger text */
+        color: #ffffff;
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        line-height: 1.2;
+    }
+
+    /* Last row with single item */
+    .mobile-skills .skills-row:last-child {
+        grid-template-columns: 1fr;
+        max-width: 150px; /* Increased width */
+        margin: 0 auto;
+    }
+
+    /* Hover effects */
+    .skill-box:hover {
+        background: rgba(255, 255, 255, 0.15);
+        transform: translateY(-2px);
+    }
+
+    .skill-box:hover i {
+        transform: scale(1.1);
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 375px) {
+    .skills-wrapper {
+        margin: 55px 0 16px 0;
+        padding: 8px;
+    }
+
+    .mobile-skills .skills-row {
+        gap: 6px;
+    }
+
+    .skill-box {
+        padding: 14px 10px;
+        min-height: 90px;
+    }
+
+    .skill-box i {
+        font-size: 28px;
+    }
+
+    .skill-box span {
+        font-size: 13px;
+    }
+}
+
+/* Very small devices */
+@media screen and (max-width: 320px) {
+    .skills-wrapper {
+        margin: 50px 0 12px 0;
+        padding: 6px;
+    }
+
+    .skill-box {
+        padding: 12px 8px;
+        min-height: 80px;
+    }
+
+    .skill-box i {
+        font-size: 24px;
+    }
+
+    .skill-box span {
+        font-size: 12px;
+    }
+}
+
+/* Scrollbar styling */
+.skills-wrapper::-webkit-scrollbar {
+    width: 6px;
+}
+
+.skills-wrapper::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.skills-wrapper::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}
+
+.skills-wrapper::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Technical Skills mobile optimization - updated with increased width and centered alignment */
+@media screen and (max-width: 768px) {
+    .skills-wrapper {
+        padding: 16px;
+        margin: 60px auto 20px;
+        overflow-y: auto;
+        max-height: calc(100vh - 100px);
+        width: 90%; /* Increased wrapper width */
+    }
+
+    /* Hide desktop skills */
+    .desktop-skills {
+        display: none;
+    }
+
+    /* Show and style mobile skills */
+    .mobile-skills {
+        display: block;
+        width: 100%;
+    }
+
+    .mobile-skills .skills-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px; /* Increased gap */
+        margin-bottom: 16px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .skill-box {
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 12px;
+        padding: 20px;
+        min-height: 120px; /* Increased height */
+        width: 100%; /* Full width */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        transition: all 0.3s ease;
+    }
+
+    .skill-box i {
+        font-size: 36px; /* Larger icons */
+        color: #ffffff;
+        margin-bottom: 8px;
+    }
+
+    .skill-box span {
+        font-size: 16px; /* Larger text */
+        color: #ffffff;
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        line-height: 1.3;
+        width: 100%; /* Full width for text */
+    }
+
+    /* Last row with single item */
+    .mobile-skills .skills-row:last-child {
+        grid-template-columns: 1fr;
+        max-width: 200px; /* Increased width for single item */
+        margin: 0 auto;
+    }
+
+    /* Hover effects */
+    .skill-box:hover {
+        background: rgba(255, 255, 255, 0.15);
+        transform: translateY(-2px);
+    }
+
+    .skill-box:hover i {
+        transform: scale(1.1);
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 375px) {
+    .skills-wrapper {
+        width: 95%; /* Slightly wider on smaller screens */
+        margin: 55px auto 16px;
+        padding: 12px;
+    }
+
+    .mobile-skills .skills-row {
+        gap: 12px;
+    }
+
+    .skill-box {
+        padding: 16px;
+        min-height: 110px;
+    }
+
+    .skill-box i {
+        font-size: 32px;
+    }
+
+    .skill-box span {
+        font-size: 14px;
+    }
+
+    /* Last row single item */
+    .mobile-skills .skills-row:last-child {
+        max-width: 180px;
+    }
+}
+
+/* Very small devices */
+@media screen and (max-width: 320px) {
+    .skills-wrapper {
+        width: 98%;
+        padding: 8px;
+    }
+
+    .mobile-skills .skills-row {
+        gap: 10px;
+    }
+
+    .skill-box {
+        padding: 14px;
+        min-height: 100px;
+    }
+
+    .skill-box i {
+        font-size: 28px;
+    }
+
+    .skill-box span {
+        font-size: 13px;
+    }
+
+    /* Last row single item */
+    .mobile-skills .skills-row:last-child {
+        max-width: 160px;
+    }
+}
+
+/* Scrollbar styling */
+.skills-wrapper::-webkit-scrollbar {
+    width: 4px;
+}
+
+.skills-wrapper::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.skills-wrapper::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+
+.skills-wrapper::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Mobile optimization for home page name and title */
+@media screen and (max-width: 768px) {
+    .info-section {
+        padding: 16px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .who-am-i {
+        font-size: 16px;
+        margin: 10px 0;
+        letter-spacing: 1px;
+        color: #23d5ab;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .typing-text {
+        font-size: 22px; /* Adjusted size */
+        line-height: 1.3;
+        margin: 12px auto;
+        padding: 0 10px;
+        max-width: 90%;
+        text-align: center;
+        white-space: normal;
+        overflow: visible;
+        border-right: none; /* Remove typing cursor for mobile */
+        background: linear-gradient(45deg, #ffffff, #23d5ab);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
+        letter-spacing: 1px;
+        animation: none; /* Remove typing animation on mobile */
+    }
+
+    .description-container {
+        margin-top: 20px;
+        padding: 16px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+    }
+
+    .description-container p {
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: justify;
+        color: #ffffff;
+        letter-spacing: 0.5px;
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 375px) {
+    .who-am-i {
+        font-size: 14px;
+    }
+
+    .typing-text {
+        font-size: 18px;
+        padding: 0 8px;
+        max-width: 95%;
+        margin: 10px auto;
+    }
+
+    .description-container {
+        padding: 12px;
+    }
+
+    .description-container p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
+
+/* Very small devices */
+@media screen and (max-width: 320px) {
+    .who-am-i {
+        font-size: 13px;
+    }
+
+    .typing-text {
+        font-size: 16px;
+        padding: 0 6px;
+        letter-spacing: 0.5px;
+    }
+
+    .description-container p {
+        font-size: 12px;
+    }
+}
+
+/* Remove animations for better mobile performance */
+@media screen and (max-width: 768px) {
+    .typing-text, .who-am-i, .description-container {
+        animation: none;
+        transform: none;
+        transition: none;
+    }
+}
+
+/* Letter printing animation styles */
+@media screen and (max-width: 768px) {
+    .typing-text {
+        font-size: 22px;
+        line-height: 1.3;
+        margin: 12px auto;
+        padding: 0 10px;
+        max-width: 90%;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid #23d5ab;
+        background: linear-gradient(45deg, #ffffff, #23d5ab);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
+        letter-spacing: 1px;
+        animation: 
+            typing 3.5s steps(60, end),
+            blink-caret 0.75s step-end infinite;
+    }
+
+    /* Typing animation */
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+
+    /* Cursor blink animation */
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #23d5ab }
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 375px) {
+    .typing-text {
+        font-size: 18px;
+        padding: 0 8px;
+        max-width: 95%;
+        margin: 10px auto;
+        animation: 
+            typing 3s steps(30, end),
+            blink-caret 0.75s step-end infinite;
+    }
+}
+
+/* Very small devices */
+@media screen and (max-width: 320px) {
+    .typing-text {
+        font-size: 16px;
+        padding: 0 6px;
+        letter-spacing: 0.5px;
+        animation: 
+            typing 2.5s steps(30, end),
+            blink-caret 0.75s step-end infinite;
+    }
+}
+
+/* Infinite typing animation version */
+@media screen and (max-width: 768px) {
+    .typing-text {
+        animation: 
+            typeAndErase 4s steps(30, end) infinite,
+            blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes typeAndErase {
+        0%, 100% { width: 0 }
+        50%, 90% { width: 100% }
+    }
+}
+
+/* Mobile name typing animation styles - fixed for full display */
+@media screen and (max-width: 768px) {
+    .typing-text {
+        font-size: 13px;
+        line-height: 1.2;
+        margin: 15px auto;
+        padding: 0;
+        width: 300px; /* Increased fixed width */
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid #23d5ab;
+        background: linear-gradient(45deg, #ffffff, #23d5ab);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+        display: block;
+        position: relative;
+        animation: 
+            mobileTypingName 6s steps(40) infinite,
+            blink-caret 0.75s step-end infinite;
+    }
+
+    /* Updated typing animation */
+    @keyframes mobileTypingName {
+        0% {
+            width: 0;
+        }
+        10%, 90% {
+            width: 300px; /* Match the element width */
+        }
+        100% {
+            width: 0;
+        }
+    }
+
+    /* Cursor blink */
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #23d5ab }
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 375px) {
+    .typing-text {
+        font-size: 11px;
+        width: 260px; /* Adjusted width */
+        letter-spacing: 0.6px;
+    }
+
+    @keyframes mobileTypingName {
+        0% {
+            width: 0;
+        }
+        10%, 90% {
+            width: 260px;
+        }
+        100% {
+            width: 0;
+        }
+    }
+}
+
+/* Very small devices */
+@media screen and (max-width: 320px) {
+    .typing-text {
+        font-size: 10px;
+        width: 230px; /* Further adjusted width */
+        letter-spacing: 0.4px;
+    }
+
+    @keyframes mobileTypingName {
+        0% {
+            width: 0;
+        }
+        10%, 90% {
+            width: 230px;
+        }
+        100% {
+            width: 0;
+        }
+    }
+}
+
+/* Mobile name typing animation styles - left aligned with reduced size */
+@media screen and (max-width: 768px) {
+    .typing-text {
+        font-size: 10px; /* Reduced font size */
+        line-height: 1.2;
+        margin: 150px auto;
+        padding: 0;
+        width: 100%; /* Reduced width */
+        text-align: left; /* Left alignment */
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid #23d5ab;
+        background: linear-gradient(45deg, #ffffff, #23d5ab);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
+        letter-spacing: 0.5px; /* Reduced letter spacing */
+        display: block;
+        position: relative;
+        animation: 
+            leftTyping 4s steps(30) infinite,
+            blink-caret 0.75s step-end infinite;
+    }
+
+    /* Left-aligned typing animation */
+    @keyframes leftTyping {
+        0% {
+            width: 0;
+            margin-left: 0;
+        }
+        10%, 90% {
+            width: 200px; /* Match the element width */
+            margin-left: 0;
+        }
+        100% {
+            width: 0;
+            margin-left: 0;
+        }
+    }
+
+    /* Cursor blink */
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #23d5ab }
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 375px) {
+    .typing-text {
+        font-size: 9px;
+        width: 1800px;
+        letter-spacing: 0.4px;
+    }
+
+    @keyframes leftTyping {
+        0% {
+            width: 0;
+        }
+        10%, 90% {
+            width: 180px;
+        }
+        100% {
+            width: 0;
+        }
+    }
+}
+
+/* Very small devices */
+@media screen and (max-width: 320px) {
+    .typing-text {
+        font-size: 8px;
+        width: 160px;
+        letter-spacing: 0.3px;
+    }
+
+    @keyframes leftTyping {
+        0% {
+            width: 0;
+        }
+        10%, 90% {
+            width: 160px;
+        }
+        100% {
+            width: 0;
+        }
+    }
+}
+
+/* Mobile name typing animation - fixed */
+@media screen and (max-width: 768px) {
+    .typing-text {
+        font-size: 8px;
+        line-height: 1.2;
+        margin: 15px auto;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid #23d5ab;
+        background: linear-gradient(45deg, #ffffff, #23d5ab);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        display: inline-block;
+        position: relative;
+        animation: 
+            mobileNameTyping 4s steps(50) infinite,
+            blink-caret 0.75s step-end infinite;
+    }
+
+    /* Simplified typing animation */
+    @keyframes mobileNameTyping {
+        0% {
+            width: 0;
+        }
+        20%, 80% {
+            width: 100%;
+        }
+        100% {
+            width: 0;
+        }
+    }
+
+    /* Cursor blink */
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #23d5ab }
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 375px) {
+    .typing-text {
+        font-size: 7px;
+        letter-spacing: 0.3px;
+    }
+}
+
+/* Very small devices */
+@media screen and (max-width: 320px) {
+    .typing-text {
+        font-size: 6px;
+        letter-spacing: 0.2px;
+    }
+}
+
+/* Mobile name typing animation - fixed and clean */
+@media screen and (max-width: 768px) {
+    .typing-text {
+        font-size: 16px;
+        line-height: 1.2;
+        margin: 15px auto;
+        padding: 0;
+        width: 0;
+        max-width: 280px; /* Fixed width to contain full name */
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid #23d5ab;
+        background: linear-gradient(45deg, #ffffff, #23d5ab);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        display: block;
+        position: relative;
+        animation: 
+            nameTyping 4s steps(30) infinite,
+            blink-caret 0.75s step-end infinite;
+    }
+
+    /* Clean typing animation */
+    @keyframes nameTyping {
+        0% {
+            width: 0;
+        }
+        30%, 70% {
+            width: 280px;
+        }
+        100% {
+            width: 0;
+        }
+    }
+
+    /* Cursor blink */
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #23d5ab }
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 375px) {
+    .typing-text {
+        font-size: 14px;
+        max-width: 240px;
+    }
+
+    @keyframes nameTyping {
+        0% {
+            width: 0;
+        }
+        30%, 70% {
+            width: 240px;
+        }
+        100% {
+            width: 0;
+        }
+    }
+}
+
+/* Very small devices */
+@media screen and (max-width: 320px) {
+    .typing-text {
+        font-size: 12px;
+        max-width: 200px;
+    }
+
+    @keyframes nameTyping {
+        0% {
+            width: 0;
+        }
+        30%, 70% {
+            width: 200px;
+        }
+        100% {
+            width: 0;
+        }
     }
 }
 ``` 
