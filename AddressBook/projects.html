@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4B0082">
+    <title>Projects - Sai Preetham Reddy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <header>
+        <div>SAI PREETHAM REDDY PENNABADI</div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./academics.html">Academics</a>
+            <a href="./technical-skills.html">Technical Skills</a>
+            <a href="./internships.html">Internships</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="projects">
+            <div class="projects-container">
+                <div class="projects-content">
+                    <div class="project-item python">
+                        <h3>PDF to DOCX Converter</h3>
+                        <h4>Python Implementation</h4>
+                    </div>
+
+                    <div class="project-item python">
+                        <h3>QR CODE Generator</h3>
+                        <h4>Python-based Solution</h4>
+                    </div>
+
+                    <div class="project-item java">
+                        <h3>Hotel Management System</h3>
+                        <h4>Java Application</h4>
+                    </div>
+
+                    <div class="project-item web">
+                        <h3>OTP VERIFICATION AND EXAM ACCESS SYSTEM</h3>
+                        <h4>Web Application based Authentication System</h4>
+                    </div>
+
+                    <div class="project-item web">
+                        <h3>AI-Powered Portfolio Website</h3>
+                        <h4>Web Application</h4>
+                    </div>
+
+                    <div class="project-item hardware">
+                        <h3>DESIGN OF AN ENERGY-EFFICIENT 8-TAP FIR FILTER</h3>
+                        <h4>22NM DTMOS TECHNOLOGY</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>© 2024 Sai Preetham Reddy Pennabadi. All Rights Reserved.</div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html> 
